@@ -2,6 +2,7 @@ BvtApp::Application.routes.draw do
   get "users/new"
 
   match '/contact', :to =>'pages#contact'
+  match '/signup', :to => 'users#new'
   
   get "pages/home"
 
